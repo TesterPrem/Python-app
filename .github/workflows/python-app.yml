@@ -1,5 +1,4 @@
 name: Python application
-
 on: [push, pull_request]
 permissions:
   contents: read
@@ -21,7 +20,6 @@ jobs:
         run: |
           export PYTHONPATH=src
           pytest
-
   Docker-Container:
     runs-on: ubuntu-latest
     container: node:19.8.1
