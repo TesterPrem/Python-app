@@ -6,10 +6,14 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     container: node:19.8.1
+=======
+    
+>>>>>>> c9171519f981dffea7e91a7bd7ecf9e9acdc7b88
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python 3.10
+      - name: Set up Python 3.9
         uses: actions/setup-python@v3
         with:
           python-version: "3.9"
